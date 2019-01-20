@@ -19,5 +19,8 @@ Raw data came from the following csv files downloaded from Udacity:
 * _washington.csv_
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+I developed _bikeshare_2.py_ based on a template downloaded from Udacity.
 
+The 'print_data' function in _bikeshare_2.py_ uses the `iterrows()` method to iterate through and print each line of raw data in the dataframe. I learned the method from the stackoverflow page below.
+
+> https://stackoverflow.com/questions/16476924/how-to-iterate-over-rows-in-a-dataframe-in-pandas
