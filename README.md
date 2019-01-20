@@ -13,7 +13,10 @@ Data from the following US cities are available for interactive analysis through
 * Washington
 
 ### Files used
-Include the files used
+Raw data came from the following csv files downloaded from Udacity:
+* _chicago.csv_
+* _new_york_city.csv_
+* _washington.csv_
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
