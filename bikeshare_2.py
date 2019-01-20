@@ -157,7 +157,7 @@ def user_stats(df):
         print()
         print(gender)
     except:
-        print('\nThere is no gender data for the city.')
+        print('\nThere is no gender data for Washington.')
 
     # Display earliest, most recent, and most common year of birth
     try:
@@ -168,7 +168,7 @@ def user_stats(df):
         print("\nThis took %s seconds." % (time.time() - start_time))
         print('-'*40)
     except:
-        print('There is no data on year of birth for the city.')
+        print('There is no data on year of birth for Washington.')
 
 def print_data(df):
     print_data = input('\nWould you like to print the first 5 lines of raw data? Please enter yes or no.\n\n> ').lower()
