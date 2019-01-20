@@ -172,10 +172,15 @@ def user_stats(df):
 
 def print_data(df):
     """Asks user repeatedly to print 5 lines of raw data"""
-    
+
+    # Ask for user input until it is either yes on no
+
     print_data = input('\nWould you like to print the first 5 lines of raw data? Please enter yes or no.\n\n> ').lower()
     while print_data not in ['yes', 'no']:
         print_data = input('\nYour input is not valid. Please enter yes or no.\n\n> ')
+    
+    # If yes, print 5 lines of raw data and get user input to print the next 5 lines or stop
+
     if print_data == 'yes':
         print('\nPrinting Raw Data...')
         row_number = 0
@@ -190,6 +195,9 @@ def print_data(df):
                     print_more = input('\nYour input is not valid. Please enter yes or no.\n\n> ').lower()
             if print_more == 'no':
                 break
+    
+    # If no, print the exit message
+    
     else:
         print('\nYou chose not to print raw data.')
 
