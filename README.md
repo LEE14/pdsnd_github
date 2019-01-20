@@ -5,7 +5,12 @@ January 20, 2019
 US bikeshare data analysis
 
 ### Description
-Describe what your project is about and what it does
+This project provides a summary of bikeshare data from US cities, including statistics on time, stations, duration and users.
+
+Data from the following US cities are available for interactive analysis through command line interface:
+* Chicago
+* New York City
+* Washington
 
 ### Files used
 Include the files used
