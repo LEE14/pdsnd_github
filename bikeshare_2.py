@@ -171,6 +171,8 @@ def user_stats(df):
         print('There is no data on year of birth for the city.')
 
 def print_data(df):
+    """Asks user repeatedly to print 5 lines of raw data"""
+    
     print_data = input('\nWould you like to print the first 5 lines of raw data? Please enter yes or no.\n\n> ').lower()
     while print_data not in ['yes', 'no']:
         print_data = input('\nYour input is not valid. Please enter yes or no.\n\n> ')
