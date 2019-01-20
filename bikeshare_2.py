@@ -7,6 +7,7 @@ CITY_DATA = { 'Chicago': 'chicago.csv',
               'Washington': 'washington.csv' }
 
 valid_months = ['All', 'January', 'February', 'March', 'April', 'May', 'June']
+valid_days = ['All', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 
 def get_filters():
     """
@@ -41,7 +42,6 @@ def get_filters():
 
     # get user input for day of week (all, monday, tuesday, ... sunday)
 
-    valid_days = ['All', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
     while True:
         day = input('Which day of week do you want to look into? Please enter any day from Monday to Friday, or All.\n\n> ').title()
         if day in valid_days:
@@ -157,7 +157,7 @@ def user_stats(df):
         print()
         print(gender)
     except:
-        print('\nThere is no gender data for the city.')
+        print('\nThere is no gender data for Washington.')
 
     # Display earliest, most recent, and most common year of birth
     try:
@@ -168,7 +168,7 @@ def user_stats(df):
         print("\nThis took %s seconds." % (time.time() - start_time))
         print('-'*40)
     except:
-        print('There is no data on year of birth for the city.')
+        print('There is no data on year of birth for Washington.')
 
 def print_data(df):
     """Asks user repeatedly to print 5 lines of raw data"""
